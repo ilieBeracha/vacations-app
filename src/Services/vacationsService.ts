@@ -1,5 +1,7 @@
 import axios from "axios";
-import { BASE_URL } from "./config";
+// import { BASE_URL } from "./config";
+
+const BASE_URL = process.env.REACT_APP_BASE_URL
 
 function getToken() {
     let token = window.localStorage.getItem('token');
@@ -14,7 +16,6 @@ class VacationService {
                 window.location.reload()
             }
         });
-
     }
     
     async getVacations(offset: number, likes: boolean, active: boolean, coming: boolean) {
