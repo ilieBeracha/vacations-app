@@ -2,7 +2,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 import { Bar } from 'react-chartjs-2';
 import { LikesForGraph } from '../../helpers/reportQueries';
 import './Reports.css'
-import { CSVDownload, CSVLink } from "react-csv";
+import { CSVLink } from "react-csv";
 
 ChartJS.register(
     CategoryScale,
