@@ -1,0 +1,34 @@
+.DeleteVacation {}
+
+.deleteAndEditVacationBtn svg {
+    width: 18px;
+}
+
+.DeleteVacationBtns {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DeleteVacationBtns button {
+    width: 30%;
+    height: 30px;
+    background-color: var(--color4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.css-1acyv19 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.deleteAndEditVacationBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

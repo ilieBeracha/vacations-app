@@ -1,0 +1,58 @@
+.Home {
+    width: 100%;
+    height: 92%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.vacationsDiv {
+    width: 90%;
+    height: 95%;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.errorImageDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorImageDiv img {
+    width: 40%;
+}
+
+.pagination {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    /* padding-bottom: 10px; */
+    position: relative;
+}
+
+.pagination button[aria-current] {
+    background-color: var(--color4);
+}
+
+.pagination button[aria-current]:hover {
+    background-color: var(--color4);
+
+}
+
+
+.LoadingDiv {
+    width: 60%;
+}

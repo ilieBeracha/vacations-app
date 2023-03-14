@@ -1,0 +1,77 @@
+.Filters {
+    width: 100%;
+    height: 8%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 60px;
+}
+.FilterCheckBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.FiltersCheckboxDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FiltersCheckboxDiv input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color4);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.FiltersCheckboxDiv input[type="checkbox"]:checked {
+    background-color: var(--color4);
+}
+
+.FiltersCheckboxDiv input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.FiltersCheckboxDiv input[type="checkbox"]:checked:after {
+    transform: translate(5px, 5px);
+}
+.FiltersCheckboxDiv input[type='checkbox']:disabled{
+    background-color: var(--color3);
+    border: 2px solid var(--color3);
+}
+
+
+.datesFilters {
+    display: flex;
+    /* width: 30%; */
+    gap: 10px;
+}
+
+
+.welcomeUser {
+    width: 20%;
+}
+
+.welcomeUser h3 {
+    margin: 0;
+    font-weight: 300;
+}

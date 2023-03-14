@@ -1,0 +1,47 @@
+.LandingPageContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.LandingPageContentSen {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.LandingPageContentSen h4 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+
+.LandingPageContentSen h5 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.earthImage {
+    min-height: 300px;
+    max-height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earthImage img{
+    min-width: 300px;
+    width: 30%;
+    position:absolute;
+}

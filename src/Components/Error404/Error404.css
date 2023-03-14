@@ -1,0 +1,12 @@
+.Error404 {
+	width: 100%;
+    height: 92%;
+    /* background-color: var(--color4); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Error404 img{
+    width: 40%;
+}

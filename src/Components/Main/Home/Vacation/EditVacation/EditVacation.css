@@ -1,0 +1,50 @@
+.EditVacation {}
+
+.css-1acyv19 {
+    height: max-content;
+}
+
+.prevImageDisplayDiv {
+    width: 100%;
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevImageDisplayDiv img {
+    width: 70%;
+}
+
+.editForm form {
+    display: flex;
+    flex-direction: row;
+}
+
+.editFormDetails {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editFormImages {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editFormImages .filepond--wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.editFormImages .filepond--root {
+    margin-bottom: 0;
+}
+
+.editFormImages .filepond--root .filepond--credits {
+    display: none;
+}
