@@ -2,6 +2,7 @@ import { UserInterface } from "../models/UserModel"
 // import { BASE_URL } from "./config"
 
 const BASE_URL = process.env.REACT_APP_BASE_URL
+
 class UserService {
     async login(user: UserInterface) {
         const results = fetch(`${BASE_URL}/login`, {
