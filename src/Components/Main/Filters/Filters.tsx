@@ -50,19 +50,24 @@ function Filters({ setOffset, likes, active, coming, setLikes, setActive, setCom
     return (
         <div className="Filters">
             <div className="welcomeUser">
-                <h3>Welcome {authSlice.firstName} {authSlice.lastName}</h3>
+                {
+                    authSlice.role === "ADMIN" ? <></> :
+                        <h3>Welcome {authSlice.firstName} {authSlice.lastName}</h3>
+                }
             </div>
             <div className="FilterCheckBoxes">
-
-                <div className="FiltersCheckboxDiv">
-                    <label htmlFor="">Liked</label>
-                    <input
-                        onChange={() => likedFilter()}
-                        type="checkbox"
-                        name="filterVacations"
-                        disabled={likedDisable}
-                    />
-                </div>
+                {
+                    authSlice.role === 'ADMIN' ? <></> :
+                        <div className="FiltersCheckboxDiv">
+                            <label htmlFor="">Liked</label>
+                            <input
+                                onChange={() => likedFilter()}
+                                type="checkbox"
+                                name="filterVacations"
+                                disabled={likedDisable}
+                            />
+                        </div>
+                }
                 <div className="FiltersCheckboxDiv">
                     <label htmlFor="">Active</label>
                     <input

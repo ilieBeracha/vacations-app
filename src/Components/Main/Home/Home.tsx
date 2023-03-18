@@ -32,7 +32,7 @@ function Home(): JSX.Element {
                     : authSlice.role === "USER" ?
                         <Filters setOffset={setOffset} active={active} setActive={setActive} likes={likes} setLikes={setLikes} coming={coming} setComing={setComing} />
                         : authSlice.role === "ADMIN" ?
-                            <AdminComponent />
+                            <AdminComponent setOffset={setOffset} active={active} setActive={setActive} likes={likes} setLikes={setLikes} coming={coming} setComing={setComing}/>
                             : <></>}
             <div className="vacationsDiv">
                 {
